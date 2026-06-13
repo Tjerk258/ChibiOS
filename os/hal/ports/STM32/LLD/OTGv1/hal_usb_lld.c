@@ -871,7 +871,7 @@ void usb_lld_start(USBDriver *usbp) {
     otgp->PCGCCTL = 0;
 
     /* VBUS sensing and transceiver enabled.*/
-    otgp->GOTGCTL = GOTGCTL_BVALOEN | GOTGCTL_BVALOVAL;
+    //otgp->GOTGCTL = GOTGCTL_BVALOEN | GOTGCTL_BVALOVAL;
 
 #if defined(BOARD_OTG2_USES_ULPI)
 #if STM32_USB_USE_OTG1
